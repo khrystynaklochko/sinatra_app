@@ -6,9 +6,9 @@ require 'sinatra'
   end
     
   get '/disk' do
-    `df -H | head -n 2`
+    'df -H | head -n 2'
   end
 
   get '/mem' do 
-    `free -m`
+    'diskutil info/'
   end
